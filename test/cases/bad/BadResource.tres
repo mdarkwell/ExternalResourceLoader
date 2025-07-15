@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c2ux5dds3da70"]
+
+[sub_resource type="GDScript" id="GDScript_i7rpo"]
+script/source = "extends Object
+
+func _init():
+	OS.crash(\"Arbitrary Code Execution occured - Test : BadResource.tres\")
+"
+
+[resource]
+script = SubResource("GDScript_i7rpo")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cepusck6ks7cv"]
+
+[ext_resource type="Script" path="res://test/GoodCaseTester.cs" id="1_sl5vc"]
+
+[node name="GoodCaseTester" type="Node"]
+script = ExtResource("1_sl5vc")

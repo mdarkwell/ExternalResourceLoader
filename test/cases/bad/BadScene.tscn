@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://bl72cur6nhyt8"]
+
+[sub_resource type="GDScript" id="GDScript_2n7l1"]
+script/source = "extends Object
+
+func _init():
+	OS.crash(\"Arbitrary Code Execution occured - Test: BadScene.tscn\")
+"
+
+[node name="TestScene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = SubResource("GDScript_2n7l1")

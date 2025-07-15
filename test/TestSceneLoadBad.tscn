@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cqam7gm1h3p35"]
+
+[ext_resource type="Script" path="res://test/BadCaseTester.cs" id="1_4b0e0"]
+
+[node name="BadCaseTester" type="Node"]
+script = ExtResource("1_4b0e0")

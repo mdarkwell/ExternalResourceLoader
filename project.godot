@@ -1,0 +1,28 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="ExternalResourceLoader"
+run/main_scene="res://test/TestScene.tscn"
+config/features=PackedStringArray("4.1", "C#", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+ExternalResourceLoader="*res://addons/ExternalResourceLoader/Core/ExternalResourceManager.cs"
+
+[dotnet]
+
+project/assembly_name="ExternalResourceLoader"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/ExternalResourceLoader/plugin.cfg")
