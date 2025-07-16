@@ -1,4 +1,4 @@
-# ExternalResourceLoader
+# <img src="https://raw.githubusercontent.com/mdarkwell/ExternalResourceLoader/refs/heads/master/icon.png" width=24 height=24 /> ExternalResourceLoader
 A godot C# plugin which attempts to safely load external resources, mitigating bad actors from arbitrary code execution at runtime.
 
 **⚠️ DISCLAIMER: This plugin does not make any guarantee or assurance that bad actors cannot still arbitrarily execute code. This merely mitigates the issue by scanning external resources for embedded scripts.**
