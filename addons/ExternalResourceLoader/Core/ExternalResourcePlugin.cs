@@ -14,12 +14,12 @@ public partial class ExternalResourcePlugin : Node
 #if TOOLS
 	public override void _EnterTree()
 	{
-		AddAutoloadSingleton("ExternalResourceLoader", $"{PluginDir}/Core/ExternalResourceManager.cs");
+		AddAutoloadSingleton("ExternalResourceManager", $"{PluginDir}/Core/ExternalResourceManager.cs");
 	}
 
 	public override void _ExitTree()
 	{
-		RemoveAutoloadSingleton("ExternalResourcePlugin");
+		RemoveAutoloadSingleton("ExternalResourceManager");
 
 	}
 
